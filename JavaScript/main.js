@@ -376,65 +376,53 @@ function displayContacts() {
   function nameValidation() {
     var pattern = new RegExp(/^[a-zA-Z\s]+$/);
     if (!pattern.test(document.getElementById("nameInput").value)) {
-      document.getElementById("nameAlert").classList.remove("d-none");
-      return true;
+      document.getElementById("nameAlert").classList.remove("hidden");
     } else {
-      document.getElementById("nameAlert").classList.add("d-none");
-      return false;
+      document.getElementById("nameAlert").classList.add("hidden");
     }
   }
   
   function emailValidation() {
     var pattern = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
     if (!pattern.test(document.getElementById("emailInput").value)) {
-    document.getElementById("emailAlert").classList.remove("d-none");
-    return true;
+    document.getElementById("emailAlert").classList.remove("hidden");
   } else {
-    document.getElementById("emailAlert").classList.add("d-none");
-    return false;
+    document.getElementById("emailAlert").classList.add("hidden");
   }
 }
 
 function phoneValidation() {
   var pattern = new RegExp(/^01[0-2,5]{1}[0-9]{8}$/);
   if (!pattern.test(document.getElementById("phoneInput").value)) {
-    document.getElementById("phoneAlert").classList.remove("d-none");
-    return true;
+    document.getElementById("phoneAlert").classList.remove("hidden");
   } else {
-    document.getElementById("phoneAlert").classList.add("d-none");
-    return false;
+    document.getElementById("phoneAlert").classList.add("hidden");
   }
 }
 
 function ageValidation() {
   var pattern = new RegExp(/^[0-9]+$/);
   if (!pattern.test(document.getElementById("ageInput").value)) {
-    document.getElementById("ageAlert").classList.remove("d-none");
-    return true;
+    document.getElementById("ageAlert").classList.remove("hidden");
   } else {
-    document.getElementById("ageAlert").classList.add("d-none");
-    return false;
+    document.getElementById("ageAlert").classList.add("hidden");
   }
 }
 
 function passValidation() {
   var pattern = new RegExp(/^(?=.*\d)(?=.*[a-z])[0-9a-zA-Z]{8,}$/);
   if (!pattern.test(document.getElementById("passwordInput").value)) {
-    document.getElementById("passwordAlert").classList.remove("d-none");
-    return true;
+    document.getElementById("passwordAlert").classList.remove("hidden");
   } else {
-    document.getElementById("passwordAlert").classList.add("d-none");
-    return false;
+    document.getElementById("passwordAlert").classList.add("hidden");
   } 
 }
 
 function pass2Validation() {
   if (document.getElementById("passwordInput").value !== document.getElementById("repasswordInput").value) {
-    document.getElementById("repasswordAlert").classList.remove("d-none");
-    return true;
+    document.getElementById("repasswordAlert").classList.remove("hidden");
   } else {
-    document.getElementById("repasswordAlert").classList.add("d-none");
-    return false;
+    document.getElementById("repasswordAlert").classList.add("hidden");
   }
 }
 
