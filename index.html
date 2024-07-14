@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/logo.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Css/all.min.css " />
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="Css/output.css" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="Css/main.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+
+    <div class="loading h-screen flex justify-center items-center">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+
+    <div class="container mx-auto my-5 text-white">
+      <div class="grid grid-cols-2 gap-4" id="rowSearch"></div>
+      <div class="grid grid-cols-4 py-2 gap-4" id="rowMeal"></div>
+      <div class="grid py-2 gap-4" id="rowMealDetail"></div>
+      <div class="" id="rowContact"></div>
+    </div>
+
+    <!-- Side Bar -->
+    <div id="sideBar" class="flex z-50">
+      <div id="leftSide" class="py-10 px-4 flex flex-col justify-between">
+          <div>
+              <ul class="list-none mt-3">
+                  <li class="cursor-pointer py-2" id="activeSearch">Search</li>
+                  <li class="cursor-pointer py-2" id="activeCategories">Categories</li>
+                  <li class="cursor-pointer py-2" id="activeArea">Area</li>
+                  <li class="cursor-pointer py-2" id="activeIngredients">Ingredients</li>
+                  <li class="cursor-pointer py-2" id="activeContact">Contact Us</li>
+              </ul>
+          </div>
+          <div class="text-white mt-3 mb-2">
+              <ul class="flex items-center space-x-3">
+                  <li><i class="fab fa-facebook click"></i></li>
+                  <li><i class="fab fa-twitter click"></i></li>
+                  <li><i class="fas fa-globe click"></i></li>
+              </ul>
+              <div class="mt-1">
+                  <p class="text-xs">Copyright © 2019 All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="bg-white flex flex-col justify-between py-6 text-2xl px-2 text-center" id="rightSide">
+          <div class="image">
+              <img src="imgs/logo.png" alt="" class="mx-auto" />
+          </div>
+          <i class="fas fa-align-justify text-2xl Buttn cursor-pointer mt-2"></i>
+          <div class="flex flex-col items-center text-lg mt-2">
+              <i class="fas fa-share-alt-square click"></i>
+              <i class="fas fa-globe click"></i>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- jQuery  -->
+    <script src="JavaScript/jquery-3.7.1.min.js"></script>
+    <!-- Main JavaSCript -->
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>
+x
